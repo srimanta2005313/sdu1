@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block header_content %}
+<h2>Welcome to my portfolio!</h2>
+<p>Passionate developer crafting digital experiences with creativity and innovation.</p>
+{% endblock header_content %}
+
+{% block content %}
+    <img src="{{ url_for('static', filename='images/Srimanta.jpg') }}" alt="My Image" class="circle-image">
+    <div class="profile-glow"></div>
+    <div class="text-block">
+        {% block content1 %}
+        <span class='name'> <h2>Hii, I am Srimanta Behera.</h2> </span>
+        <h3>Currently,I am pursuing B.Tech under the domain of Computer Science and Engineering in GIET University,Gunupur.</h3>
+        {% endblock content1 %}
+    </div>
+{% endblock content %}
+
